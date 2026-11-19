@@ -1,0 +1,90 @@
+<section class="dashboard">
+
+  <div class="page-heading">
+    <div>
+      <h1>Dashboard</h1>
+      <p>Overview of your IT change management operations.</p>
+    </div>
+    <span class="environment-label">Demo Environment</span>
+  </div>
+
+  <div class="stats-grid">
+
+    <article class="stat-card">
+      <div class="stat-heading">
+        <span>Total Changes</span>
+        <span class="stat-icon blue">01</span>
+      </div>
+      <strong>0</strong>
+      <p>Registered change requests</p>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-heading">
+        <span>Pending Approval</span>
+        <span class="stat-icon amber">02</span>
+      </div>
+      <strong>0</strong>
+      <p>Awaiting review</p>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-heading">
+        <span>Approved</span>
+        <span class="stat-icon green">03</span>
+      </div>
+      <strong>0</strong>
+      <p>Authorized changes</p>
+    </article>
+
+    <article class="stat-card">
+      <div class="stat-heading">
+        <span>Completed</span>
+        <span class="stat-icon purple">04</span>
+      </div>
+      <strong>0</strong>
+      <p>Finished interventions</p>
+    </article>
+
+  </div>
+
+  <div class="dashboard-grid">
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Recent Changes</h2>
+          <p>Latest registered change requests</p>
+        </div>
+        <a routerLink="/changes">View all</a>
+      </div>
+
+      <div class="empty-state">
+        <div class="empty-icon">+</div>
+        <h3>No changes registered</h3>
+        <p>Your change requests will appear here.</p>
+        <a routerLink="/changes/new" class="action-link">
+          Create your first change
+        </a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <div>
+          <h2>Pending Approvals</h2>
+          <p>Changes requiring authorization</p>
+        </div>
+        <a routerLink="/approvals">View all</a>
+      </div>
+
+      <div class="empty-state">
+        <div class="empty-icon">✓</div>
+        <h3>All caught up</h3>
+        <p>No change requests are awaiting approval.</p>
+      </div>
+    </section>
+
+  </div>
+
+</section>
